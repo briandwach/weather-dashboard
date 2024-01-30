@@ -14,9 +14,45 @@
 </head>
 
 <body>
-    <header class="text-center mx-3">
-
+    <header class="row">
+        <div class="col-0 col-lg-5"><!-- For responsive header spacing --></div>
+        <h1 class="col-12 col-lg-7 text-center text-white pt-1">Weather Dashboard</h1>
     </header>
+
+    <main class="row">
+
+        <aside class="col-12 col-lg-3">
+            <form id="citySearch">
+                <h3 class="d-block">Search for a City:</h3>
+                <input class="d-block"/>
+                <submit class="d-block">Search</submit>
+                <hr></hr>
+            </form>
+
+            
+            <div id="searchHistory" class=""><!-- Container for dynamic serach history buttons --></div>
+        </aside>
+
+
+        <section class="col-12 col-lg-8 row p-3">
+
+            <article id="currentWeather" class="col-12 border border-dark">
+                <div class="d-flex"><!-- Flebox container -->
+                    <h2 id="cityRender" class="d-inline-flex">Welcome!</h2>
+                    <h2 id="dateRender" class="d-inline-flex"><!-- Container for dynamic rendering of current date-->
+                    </h2>
+                </div>
+            </article>
+
+            <article id="forecastRender">
+
+            </article>
+
+
+        </section>
+        <div class="col-0 col-lg-1"><!-- For responsive right margin spacing --></div>
+
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./assets/js/script.js"></script>
