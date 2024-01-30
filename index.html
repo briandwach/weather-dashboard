@@ -22,29 +22,29 @@
     <main class="row">
 
         <aside class="col-12 col-lg-3">
-            <form id="citySearch">
-                <h3 class="d-block">Search for a City:</h3>
-                <input class="d-block"/>
-                <submit class="d-block">Search</submit>
+            <form id="citysearch">
+                <label for="cityinput" class="d-block" >Search for a City:</label>
+                <input id="cityinput" name="cityinput" class="d-block" type="text"  placeholder="San Diego" required/>
+                <button id="submit" class="d-block">Search</button>
                 <hr></hr>
             </form>
 
             
-            <div id="searchHistory" class=""><!-- Container for dynamic serach history buttons --></div>
+            <div id="searchhistory" class=""><!-- Container for dynamic serach history buttons --></div>
         </aside>
 
 
         <section class="col-12 col-lg-8 row p-3">
 
-            <article id="currentWeather" class="col-12 border border-dark">
+            <article id="currentweather" class="col-12 border border-dark">
                 <div class="d-flex"><!-- Flebox container -->
-                    <h2 id="cityRender" class="d-inline-flex">Welcome!</h2>
-                    <h2 id="dateRender" class="d-inline-flex"><!-- Container for dynamic rendering of current date-->
+                    <h2 id="cityrender" class="d-inline-flex">Welcome!</h2>
+                    <h2 id="daterender" class="d-inline-flex"><!-- Container for dynamic rendering of current date-->
                     </h2>
                 </div>
             </article>
 
-            <article id="forecastRender">
+            <article id="forecastrender">
 
             </article>
 
