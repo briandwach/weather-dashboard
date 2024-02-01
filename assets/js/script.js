@@ -15,7 +15,7 @@ function startWeatherSearch(event) {
 
 function getCoordinatesApi(city) {
     var apiKey = 'f792e5dc60b51965b173fc62383ec644';
-    var requestUrl = ('http://api.openweathermap.org/geo/1.0/direct?q=' +
+    var requestUrl = ('https://api.openweathermap.org/geo/1.0/direct?q=' +
         city + '&appid=' + apiKey);
 
     fetch(requestUrl)
